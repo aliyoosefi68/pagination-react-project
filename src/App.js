@@ -20,7 +20,7 @@ function App() {
         let allShownTodos = data.slice(startIndex, endIndex);
         setPaginated(allShownTodos);
       });
-  }, []);
+  }, [currentPage]);
 
   const pagesCount = Math.ceil(todos.length / pageSize);
   pagesNumber = Array.from(Array(pagesCount).keys());
